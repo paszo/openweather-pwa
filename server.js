@@ -290,7 +290,7 @@ function startServer() {
   const app = express();
 
   // Redirect HTTP to HTTPS,
-  app.use(redirectToHTTPS([/localhost:(\d{4})/], [], 301));
+  app.use(redirectToHTTPS([], [], 301));
 
   // Logging for each request
   app.use((req, resp, next) => {
@@ -316,7 +316,7 @@ function startServer() {
   const port = process.env.PORT || 8000;
   return app.listen(port, () => {
     // eslint-disable-next-line no-console
-    console.log('Local DevServer Started on port 8000...');
+    console.log(`Local DevServer Started on port...${port}`);
   });
 }
 
