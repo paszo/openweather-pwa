@@ -17,15 +17,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/googlecodelabs/your-first-pwapp.git"
+    "url": "git+https://github.com/googlecodelabs/your-first-pwapp.git"
   },
   "bugs": {
     "url": "https://github.com/googlecodelabs/your-first-pwapp/issues"
   },
-  "license": "Apache2",
   "keywords": [
     "progressive-web-app",
     "pwa",
     "installable web app"
-  ]
+  ],
+  "author": "",
+  "license": "ISC"
 }
